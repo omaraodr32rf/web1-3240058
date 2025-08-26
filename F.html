@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Religion</title>
+    <style>
+        /* Simple reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fdf6e3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #009688;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #00796b;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #00796b;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #009688;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #00796b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eeeeee;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Islam Website</h1>
+        <nav>
+            <a href="#about">About Islam</a>
+            <a href="#values">Values & Principles</a>
+            <a href="#interaction">Interact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Islam</h2>
+        <p>Islam is a religion of peace and goodness, based on worshiping Allah alone and following the teachings of Prophet Muhammad (peace be upon him). It includes belief in Allah, angels, holy books, prophets, the Day of Judgment, and divine destiny.</p>
+    </section>
+
+    <section id="values">
+        <h2>Values & Principles</h2>
+        <ul>
+            <li>Honesty and integrity</li>
+            <li>Justice and equality</li>
+            <li>Forgiveness and compassion</li>
+            <li>Good behavior towards others</li>
+            <li>Pursuit of knowledge and continuous learning</li>
+        </ul>
+    </section>
+
+    <section id="interaction">
+        <h2>Interact with Us</h2>
+        <p>Click the button below to get a welcome message!</p>
+        <button onclick="greet()">Click Here</button>
+    </section>
+
+    
+    <script>
+        function greet() {
+            alert("Welcome to the Islam website! We hope you enjoy and benefit from your reading.");
+        }
+    </script>
+
+</body>
+</html>
