@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #0b3d91, #1e90ff);
+            color: #fff;
+        }
+        header {
+            background-color: #001f3f;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #ffdc00;
+        }
+        img.main-img {
+            display: block;
+            margin: 20px auto;
+            width: 350px;
+            border-radius: 10px;
+            border: 3px solid #ffdc00;
+        }
+        p {
+            width: 85%;
+            margin: 20px auto;
+            font-size: 20px;
+            line-height: 1.6;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        ul {
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .gallery {
+            text-align: center;
+            margin: 25px auto;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            width: 90%;
+        }
+        .gallery img {
+            width: 180px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 2px solid #ffdc00;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .button-container {
+            text-align: center;
+            margin: 20px;
+        }
+        a.button {
+            text-decoration: none;
+            color: #fff;
+            background-color: #ffdc00;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        a.button:hover {
+            background-color: #ffaa00;
+        }
+        h2.section-title {
+            text-align: center;
+            color: #ffdc00;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Space Exploration</h1>
+    </header>
+
+    <img class="main-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/ISS-Expedition_61_Mission_Patch.png" alt="Space Image">
+
+    <p>Space exploration is the use of astronomy and space technologies to explore outer space. While the study of space is carried out mainly by astronomers with telescopes, its physical exploration is conducted both by unmanned robotic space probes and human spaceflight.</p>
+
+    <ul>
+        <li>First artificial satellite: Sputnik 1 (1957)</li>
+        <li>First human in space: Yuri Gagarin (1961)</li>
+        <li>Major organizations: NASA, ESA, Roscosmos, CNSA</li>
+        <li>Famous missions: Apollo 11, Voyager, Mars Rovers</li>
+    </ul>
+
+    <h2 class="section-title">Key Achievements</h2>
+    <p>Humanity has landed on the Moon, sent probes to every planet in the solar system, and observed distant galaxies. Space telescopes like Hubble have expanded our understanding of the universe and confirmed the existence of countless stars and planets beyond our solar system.</p>
+
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Apollo_11_insignia.png" alt="Apollo 11">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Voyager_logo.png" alt="Voyager">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Curiosity_Self-Portrait_at_%27Rocknest%27.jpg" alt="Mars Rover">
+    </div>
+
+    <div class="button-container">
+        <a class="button" href="https://www.nasa.gov/" target="_blank">Visit NASA Official Site</a>
+    </div>
+
+    <script>
+        // Welcome alert
+        window.onload = function() {
+            alert('Welcome to the Space Exploration page! Click on images to enlarge them.');
+        };
+
+        // Image click enlarge effect
+        const galleryImages = document.querySelectorAll('.gallery img');
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                if (img.style.transform === 'scale(2)') {
+                    img.style.transform = 'scale(1)';
+                } else {
+                    img.style.transform = 'scale(2)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
