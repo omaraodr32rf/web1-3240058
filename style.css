@@ -1,0 +1,49 @@
+h1 , p{
+    color: aqua;
+
+}
+.ali{
+    color: blueviolet;
+}
+p#ccc{
+    color: blue;
+}
+*{
+color: aquamarine;
+}
+h4{
+    border-style:solid;
+    border-color: black;
+    border-width:3px ;
+      border-radius: 5px;
+width: 150px;
+height: 10px;
+padding: 12px 10px 15px 11px;
+margin: 10px 10px 10px 10px;
+   /* border: solid 3px black;*/
+    
+}
+
+div{
+    height: 100px;
+    background-color: brown;
+    width: 100px;
+margin-left: auto;
+margin-right: auto;
+}
+.a{
+    color: blue;
+    text-align: right;
+direction: ltr;
+text-transform: uppercase;
+
+}
+.c{
+    letter-spacing: 30px;
+    word-spacing: 12xp;
+    line-height: 30px;
+}
+#oma{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:50px ;
+}
